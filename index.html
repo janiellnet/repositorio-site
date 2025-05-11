@@ -2,15 +2,19 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Site script</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Produto Incrível</title>
   <style>
-    /* Reset e estilo base */
+    :root {
+      --cor-principal: #00c8c8;
+      --cor-escura: #006666;
+    }
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
     }
 
     body {
@@ -19,44 +23,100 @@
     }
 
     header {
-      background-color: #0077cc;
+      background-color: var(--cor-principal);
       color: white;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
     }
 
+    header h1 {
+      font-size: 2.5em;
+    }
+
     nav {
-      background: #005fa3;
-      padding: 10px;
+      background: var(--cor-escura);
+      padding: 15px;
       text-align: center;
     }
 
     nav a {
       color: white;
-      margin: 0 15px;
+      margin: 0 10px;
       text-decoration: none;
       font-weight: bold;
     }
 
     main {
-      padding: 30px;
-      text-align: center;
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
 
     section {
-      margin: 20px 0;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: var(--cor-escura);
+      margin-bottom: 10px;
+    }
+
+    .cta {
+      text-align: center;
+      background-color: var(--cor-principal);
+      color: white;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .cta button {
+      background-color: white;
+      color: var(--cor-principal);
+      border: 2px solid white;
+      padding: 10px 25px;
+      font-size: 1.1em;
+      cursor: pointer;
+      margin: 10px;
+      border-radius: 5px;
+    }
+
+    .social-buttons {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .social-buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 15px 25px;
+      background-color: var(--cor-principal);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .social-buttons a:hover {
+      background-color: var(--cor-escura);
     }
 
     footer {
-      background: #222;
+      background-color: #333;
       color: white;
       text-align: center;
-      padding: 15px;
+      padding: 20px;
+      margin-top: 40px;
     }
 
     @media (max-width: 600px) {
-      nav a {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .cta button {
         display: block;
+        width: 100%;
         margin: 10px 0;
       }
     }
@@ -65,35 +125,58 @@
 <body>
 
   <header>
-    <h1>Bem-vindo ao Script EXTRACTOR</h1>
-    <p>COLOQUE O SUB TITULO</p>
+    <h1>Produto Incrível</h1>
+    <p>Transforme sua vida com esta solução única!</p>
   </header>
 
   <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#servicos">Serviços</a>
+    <a href="#produto">Produto</a>
+    <a href="#beneficios">Benefícios</a>
+    <a href="#depoimentos">Depoimentos</a>
     <a href="#contato">Contato</a>
   </nav>
 
   <main>
-    <section id="sobre">
-      <h2>Sobre Nós</h2>
-      <p>Texto descritivo sobre o site ou empresa.</p>
+    <section id="produto">
+      <h2>O que é o Produto?</h2>
+      <p>Nosso produto é uma solução pensada para você que busca resultados reais. Com tecnologia moderna e foco em performance, ele entrega exatamente o que você precisa.</p>
     </section>
 
-    <section id="servicos">
-      <h2>Nossos Serviços</h2>
-      <p>Descrição dos serviços oferecidos.</p>
+    <section id="beneficios">
+      <h2>Benefícios</h2>
+      <ul>
+        <li>Resultados visíveis em poucos dias</li>
+        <li>Fácil de usar</li>
+        <li>Garantia de satisfação</li>
+        <li>Suporte especializado</li>
+      </ul>
+    </section>
+
+    <section id="depoimentos">
+      <h2>O que nossos clientes dizem</h2>
+      <blockquote>“Esse produto mudou minha vida. Não sei como vivi sem ele antes!” – João S.</blockquote>
+      <blockquote>“A equipe é incrível e o suporte é rápido. Recomendo demais.” – Maria F.</blockquote>
+    </section>
+
+    <section class="cta">
+      <h2>Pronto para mudar de vida?</h2>
+      <p>Adquira agora com um desconto exclusivo de lançamento!</p>
+      <button onclick="window.location.href='#contato'">Quero Comprar Agora</button>
     </section>
 
     <section id="contato">
-      <h2>Contato</h2>
-      <p>Email: contato@seudominio.com</p>
+      <h2>Entre em contato</h2>
+      <p>Fale conosco pelo WhatsApp ou Telegram para tirar dúvidas ou concluir sua compra.</p>
+
+      <div class="social-buttons">
+        <a href="https://wa.me/SEUNUMERO" target="_blank">WhatsApp</a>
+        <a href="https://t.me/SEUUSUARIO" target="_blank">Telegram</a>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+    <p>&copy; 2025 Produto Incrível. Todos os direitos reservados.</p>
   </footer>
 
 </body>
