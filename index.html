@@ -96,24 +96,42 @@
       font-weight: bold;
       display: inline-block;
     }
-    .contact-buttons {
+
+    /* Contatos */
+    .contact-section {
       text-align: center;
       padding: 40px 20px;
     }
+    .contact-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
     .contact-buttons a {
-      background-color: #e50914;
       color: white;
       padding: 12px 25px;
       text-decoration: none;
       border-radius: 5px;
-      margin: 10px;
-      display: inline-block;
       font-weight: bold;
       font-size: 16px;
+      display: inline-flex;
+      align-items: center;
     }
     .contact-buttons a i {
       margin-right: 8px;
     }
+    .whatsapp {
+      background-color: #25D366;
+    }
+    .telegram {
+      background-color: #0088cc;
+    }
+    .instagram {
+      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    }
+
     footer {
       background-color: #000000;
       color: #aaaaaa;
@@ -131,9 +149,6 @@
 
   <nav>
     <a href="#">Início</a>
-    <a href="#">Scripts</a>
-    <a href="#">Planos</a>
-    <a href="#">Contato</a>
   </nav>
 
   <section class="hero">
@@ -166,14 +181,20 @@
   <header>
     <h1>CONTATOS</h1>
   </header>
-
-  <section class="contact-buttons">
-    <a href="https://wa.me/5538998508385" target="_blank">
-      <i class="fab fa-whatsapp"></i> WhatsApp
-    </a>
-    <a href="https://t.me/janiellnet" target="_blank">
-      <i class="fab fa-telegram-plane"></i> Telegram
-    </a>
+  <section class="contact-section">
+    <div class="contact-buttons contact-row">
+      <a href="https://wa.me/5538998508385" target="_blank" class="whatsapp">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="https://t.me/janiellnet" target="_blank" class="telegram">
+        <i class="fab fa-telegram-plane"></i> Telegram
+      </a>
+    </div>
+    <div class="contact-buttons">
+      <a href="https://instagram.com/janiellnet" target="_blank" class="instagram">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+    </div>
   </section>
 
   <footer>
