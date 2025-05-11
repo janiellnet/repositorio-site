@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Produto Incrível</title>
+  <title>VPN Segura e Gratuita</title>
   <style>
     :root {
       --cor-principal: #00c8c8;
       --cor-escura: #006666;
+      --cor-clara: #e0f7f7;
     }
 
     * {
@@ -59,6 +60,18 @@
     h2 {
       color: var(--cor-escura);
       margin-bottom: 10px;
+    }
+
+    .benefits ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    .testimonials blockquote {
+      background-color: var(--cor-clara);
+      padding: 15px;
+      border-left: 5px solid var(--cor-principal);
+      margin: 10px 0;
     }
 
     .cta {
@@ -125,48 +138,55 @@
 <body>
 
   <header>
-    <h1>Produto Incrível</h1>
-    <p>Transforme sua vida com esta solução única!</p>
+    <h1>VPN Segura e Gratuita</h1>
+    <p>Proteja sua privacidade online com nossa VPN confiável</p>
   </header>
 
   <nav>
-    <a href="#produto">Produto</a>
+    <a href="#sobre">Sobre</a>
     <a href="#beneficios">Benefícios</a>
     <a href="#depoimentos">Depoimentos</a>
+    <a href="#planos">Planos</a>
     <a href="#contato">Contato</a>
   </nav>
 
   <main>
-    <section id="produto">
-      <h2>O que é o Produto?</h2>
-      <p>Nosso produto é uma solução pensada para você que busca resultados reais. Com tecnologia moderna e foco em performance, ele entrega exatamente o que você precisa.</p>
+    <section id="sobre">
+      <h2>Sobre a VPN</h2>
+      <p>Nossa VPN gratuita oferece proteção de dados sem limites de velocidade ou anúncios. Ideal para quem busca segurança e privacidade online.</p>
     </section>
 
-    <section id="beneficios">
+    <section id="beneficios" class="benefits">
       <h2>Benefícios</h2>
       <ul>
-        <li>Resultados visíveis em poucos dias</li>
-        <li>Fácil de usar</li>
-        <li>Garantia de satisfação</li>
-        <li>Suporte especializado</li>
+        <li>Sem limites de dados ou velocidade</li>
+        <li>Sem anúncios</li>
+        <li>Política de não registro de atividades</li>
+        <li>Aplicativos de código aberto e auditados</li>
+        <li>Proteção contra censura e vigilância</li>
       </ul>
     </section>
 
-    <section id="depoimentos">
-      <h2>O que nossos clientes dizem</h2>
-      <blockquote>“Esse produto mudou minha vida. Não sei como vivi sem ele antes!” – João S.</blockquote>
-      <blockquote>“A equipe é incrível e o suporte é rápido. Recomendo demais.” – Maria F.</blockquote>
+    <section id="depoimentos" class="testimonials">
+      <h2>Depoimentos</h2>
+      <blockquote>“A melhor VPN gratuita disponível.” – TechRadar</blockquote>
+      <blockquote>“Recomendo a todos que valorizam sua privacidade online.” – Usuário satisfeito</blockquote>
+    </section>
+
+    <section id="planos">
+      <h2>Planos</h2>
+      <p>Oferecemos um plano gratuito com recursos essenciais e planos pagos com funcionalidades avançadas para usuários que desejam mais.</p>
     </section>
 
     <section class="cta">
-      <h2>Pronto para mudar de vida?</h2>
-      <p>Adquira agora com um desconto exclusivo de lançamento!</p>
-      <button onclick="window.location.href='#contato'">Quero Comprar Agora</button>
+      <h2>Pronto para proteger sua conexão?</h2>
+      <p>Baixe agora e navegue com segurança!</p>
+      <button onclick="window.location.href='#contato'">Entrar em Contato</button>
     </section>
 
     <section id="contato">
-      <h2>Entre em contato</h2>
-      <p>Fale conosco pelo WhatsApp ou Telegram para tirar dúvidas ou concluir sua compra.</p>
+      <h2>Contato</h2>
+      <p>Fale conosco pelo WhatsApp ou Telegram para mais informações.</p>
 
       <div class="social-buttons">
         <a href="https://wa.me/SEUNUMERO" target="_blank">WhatsApp</a>
@@ -176,7 +196,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Produto Incrível. Todos os direitos reservados.</p>
+    <p>&copy; 2025 VPN Segura. Todos os direitos reservados.</p>
   </footer>
 
 </body>
