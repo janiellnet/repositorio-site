@@ -165,6 +165,8 @@ Máquina de Vendas!</h2>
   Junte-se aos especialistas em vendas, e comece hoje mesmo a criar seu público.
 </div>
 
+  
+
   <!DOCTYPE html><html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -225,10 +227,36 @@ Máquina de Vendas!</h2>
     .cta:hover {
       background-color: #00c9b4;
     }
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      font-size: 30px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .whatsapp-button:hover {
+      transform: scale(1.1);
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .fade-in {
+      animation: fadeIn 1s ease-out;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="container fade-in">
     <h1>Transforme a Gestão de Contas e Grupos com um Único Script</h1>
     <p>Automatize, escale e domine o jogo com o painel de automação mais poderoso do mercado.</p><h2>O que este script faz por você:</h2>
 <ul>
@@ -261,9 +289,13 @@ Máquina de Vendas!</h2>
 
 <a class="cta" href="#">Garanta o seu agora</a>
 
-  </div>
+  </div>  <a href="https://wa.me/5538998508385" class="whatsapp-button" target="_blank">
+    &#128242;
+  </a>
 </body>
 </html>
+
+  
   
   <section class="hero" style="margin-top: 0; padding-top: 0;">
     <h2>Scripts para Automatizar e Lucrar</h2>
