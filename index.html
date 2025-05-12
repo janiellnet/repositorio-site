@@ -172,50 +172,44 @@ Máquina de Vendas!</h2>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Script de Automação Premium</title>
+  <title>Script Premium de Automação</title>
   <style>
     body {
       margin: 0;
       padding: 0;
+      background-color: #0e0e0e;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #000;
       color: #eee;
-      line-height: 1.6;
     }
     .container {
-      max-width: 960px;
+      max-width: 1000px;
       margin: auto;
       padding: 2rem;
     }
     h1, h2, h3 {
-      color: #00ffe5;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    h2 {
-      font-size: 2rem;
-      margin-top: 2rem;
+      color: #00ffe0;
+      text-shadow: 0 0 5px #00ffe0;
     }
     p {
       margin-bottom: 1rem;
+      font-size: 1.1rem;
     }
     ul {
       list-style: none;
       padding-left: 0;
     }
     ul li::before {
-      content: "✔";
+      content: "✓";
       color: #00ff88;
-      margin-right: 8px;
+      margin-right: 10px;
+      font-weight: bold;
     }
     .highlight {
       color: #00ff88;
       font-weight: bold;
     }
     .cta {
-      background-color: #00ffe5;
+      background-color: #00ffe0;
       color: #000;
       padding: 1rem 2rem;
       display: inline-block;
@@ -223,82 +217,142 @@ Máquina de Vendas!</h2>
       text-decoration: none;
       font-weight: bold;
       border-radius: 8px;
-      transition: background 0.3s ease;
+      transition: 0.3s;
     }
     .cta:hover {
       background-color: #00c9b4;
     }
+
+    .section {
+      margin-top: 3rem;
+      border-top: 1px solid #222;
+      padding-top: 2rem;
+    }
+
+    .pricing {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .plan {
+      flex: 1 1 220px;
+      background-color: #1a1a1a;
+      padding: 1.5rem;
+      border-radius: 10px;
+      border: 1px solid #00ffe0;
+      text-align: center;
+    }
+
+    .plan h3 {
+      color: #00ffe0;
+      font-size: 1.5rem;
+    }
+
+    .plan p {
+      margin: 1rem 0;
+    }
+
+    .price {
+      font-size: 2rem;
+      color: #00ff88;
+      margin: 1rem 0;
+    }
+
     .whatsapp-button {
       position: fixed;
       bottom: 20px;
       right: 20px;
       background-color: #25D366;
-      color: white;
       border-radius: 50%;
       width: 60px;
       height: 60px;
       display: flex;
       justify-content: center;
       align-items: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
       transition: transform 0.3s ease-in-out;
     }
+
     .whatsapp-button:hover {
       transform: scale(1.1);
     }
+
     .whatsapp-button img {
-      width: 30px;  /* Ajuste o tamanho do ícone conforme necessário */
-      height: 30px;
-    }
-    @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
-    }
-    .fade-in {
-      animation: fadeIn 1s ease-out;
+      width: 32px;
+      height: 32px;
     }
   </style>
 </head>
 <body>
-  <div class="container fade-in">
-    <h1>Transforme a Gestão de Contas e Grupos com um Único Script</h1>
-    <p>Automatize, escale e domine o jogo com o painel de automação mais poderoso do mercado.</p>
 
-    <h2>O que este script faz por você:</h2>
-    <ul>
-      <li>Automação total de cadastro, remoção e gerenciamento de contas.</li>
-      <li>Filtro inteligente de contas banidas.</li>
-      <li>Adição de membros reais (ativos, inativos, online, por frequência).</li>
-      <li>Modos avançados e ocultos para evitar bloqueios.</li>
-      <li>Login via CSV para múltiplas contas.</li>
-      <li>Painel intuitivo, acessível para todos os níveis.</li>
-    </ul>
+  <div class="container">
+    <h1>Script Premium de Automação de Membros e Contas</h1>
+    <p>Domine a gestão de contas e aumente seus grupos e canais com um sistema de automação profissional, discreto e poderoso.</p>
 
-    <h2>Por que esse script é essencial?</h2>
-    <ul>
-      <li><span class="highlight">Economia real de tempo e dinheiro</span>: esqueça o trabalho manual.</li>
-      <li><span class="highlight">Crescimento em escala</span>: mais membros, mais rápido.</li>
-      <li><span class="highlight">Alta segurança</span>: operações otimizadas para evitar bloqueios.</li>
-      <li><span class="highlight">Performance profissional</span>: nível de agência.</li>
-      <li><span class="highlight">Pronto para escalar</span>: 10, 100 ou 1000 contas com facilidade.</li>
-    </ul>
+    <div class="section">
+      <h2>O Que Este Script Faz?</h2>
+      <ul>
+        <li>Cadastro e remoção automatizada de contas.</li>
+        <li>Login múltiplo via CSV com total praticidade.</li>
+        <li>Filtragem de contas banidas automaticamente.</li>
+        <li>Adição de membros reais (diários, semanais, mensais, online, inativos).</li>
+        <li>Modos ocultos e avançados para evitar bloqueios e punições.</li>
+        <li>Painel de controle intuitivo para qualquer usuário.</li>
+      </ul>
+    </div>
 
-    <h2>Resultados que falam por si:</h2>
-    <ul>
-      <li>Grupos e canais crescendo em poucas horas.</li>
-      <li>Engajamento real com membros segmentados.</li>
-      <li>Operações 24/7 com mínima supervisão.</li>
-    </ul>
+    <div class="section">
+      <h2>Por Que Você Precisa Disso?</h2>
+      <ul>
+        <li><span class="highlight">Resultados reais</span>: membros ativos, engajamento e crescimento imediato.</li>
+        <li><span class="highlight">Economia de tempo</span>: esqueça o trabalho manual.</li>
+        <li><span class="highlight">Alta escalabilidade</span>: controle centenas de contas com facilidade.</li>
+        <li><span class="highlight">Ideal para afiliados, agências, gestores de tráfego, criadores e vendedores.</span></li>
+      </ul>
+    </div>
 
-    <h2>Ou você automatiza, ou você fica para trás.</h2>
-    <p>Este script é a <span class="highlight">chave para escalar seus projetos</span> no digital com inteligência e impacto. Não fique para trás enquanto outros dominam o mercado.</p>
+    <div class="section">
+      <h2>Planos e Preços</h2>
+      <div class="pricing">
+        <div class="plan">
+          <h3>Plano 30 Dias</h3>
+          <p>Ideal para quem quer testar e começar a escalar.</p>
+          <div class="price">R$ 49,90</div>
+          <a class="cta" href="https://wa.me/5538998508385">Contratar</a>
+        </div>
+        <div class="plan">
+          <h3>Plano 6 Meses</h3>
+          <p>Perfeito para campanhas consistentes e crescimento contínuo.</p>
+          <div class="price">R$ 199,00</div>
+          <a class="cta" href="https://wa.me/5538998508385">Contratar</a>
+        </div>
+        <div class="plan">
+          <h3>Plano Anual</h3>
+          <p>Para quem quer estabilidade e performance por longo prazo.</p>
+          <div class="price">R$ 349,00</div>
+          <a class="cta" href="https://wa.me/5538998508385">Contratar</a>
+        </div>
+        <div class="plan">
+          <h3>Vitalício</h3>
+          <p>Acesso definitivo e suporte prioritário.</p>
+          <div class="price">R$ 497,00</div>
+          <a class="cta" href="https://wa.me/5538998508385">Contratar</a>
+        </div>
+      </div>
+    </div>
 
-    <a class="cta" href="#">Garanta o seu agora</a>
+    <div class="section">
+      <h2>Garantia e Suporte</h2>
+      <p>Suporte técnico via WhatsApp e atualizações incluídas em todos os planos. Garantia de entrega e funcionamento.</p>
+    </div>
   </div>
 
   <a href="https://wa.me/5538998508385" class="whatsapp-button" target="_blank">
-    <img src="https://i.imgur.com/bRY90Wz.png" alt="WhatsApp" />
+    <img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" alt="WhatsApp" />
   </a>
+
 </body>
 </html>
 
